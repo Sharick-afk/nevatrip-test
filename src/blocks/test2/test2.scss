@@ -1,0 +1,12 @@
+.test2 {
+  .hide {
+    display: none;
+  }
+  .error {
+    color: red;
+    display: none;
+    &.show {
+      display: block;
+    }
+  }
+}

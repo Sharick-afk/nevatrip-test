@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <title>Тестовое</title>
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
+    <meta name="format-detection" content="telephone=no">
+  </head>
+  <body class="body">
+      <section class="test2">
+        <div class="container"> 
+          <div class="test2__block"><select name="direction" id="direction">
+<option value="1">из A в B</option>
+<option value="2">из B в A</option>
+<option value="3">из A в B и обратно в А</option>
+</select>
+          </div>
+          <div class="test2__block"><label for="time">Выберите время</label>
+<select name="time" id="time" >
+</select>
+          </div>
+          <div class="test2__block js-dop-block hide"><label for="time2">Выберите время возвращения</label>
+            <p class="error">К данному времени вы не успеете </p><select name="time2" id="time2" >
+</select>
+          </div>
+          <div class="test2__block"><label for="num">Количество билетов</label>
+<input id="number" type='number'>
+<button id='result-btn'>Посчитать</button>
+          </div>
+          <p class="js-result"></p>
+        </div><a class="change-btn" href="test3.html">третье задание</a>
+      </section>
+    <script src="js/scripts.js"></script>
+  </body>
+</html>

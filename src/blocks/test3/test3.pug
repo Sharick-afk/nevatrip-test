@@ -1,0 +1,119 @@
+mixin test3(modifier)
+  .test3 
+    h2 вопрос 1
+    p здесь, по аналогии с детскими билетами, добавляются по 2 новых поля для каждого нового типа билета. кол-во и цена за шт
+    ul 
+      li ticket_group_price
+      li ticket_group_quantity
+      li ticket_prefer_price
+      li ticket_prefer_quantity
+    <table>
+    <thead>
+    <tr>
+    <th>id</th>
+    <th>event_id</th>
+    <th>event_date</th>
+    <th>ticket_adult_price</th>
+    <th>ticket_adult_quantity</th>
+    <th>ticket_kid_price</th>
+    <th>ticket_kid_quantity</th>
+    <th>ticket_group_price</th>
+    <th>ticket_group_quantity</th>
+    <th>ticket_prefer_price</th>
+    <th>ticket_prefer_quantity</th>
+    <th>barcode(des)</th>
+    <th>user_id</th>
+    <th>equal_price</th>
+    <th>created</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td>1</td>
+    <td>003</td>
+    <td>2021-08-21 13:00:00</td>
+    <td>700</td>
+    <td>1</td>
+    <td>450</td>
+    <td>0</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>11111111</td>
+    <td>00451</td>
+    <td>700</td>
+    <td>2021-01-11 13:22:09</td>
+    </tr>
+    <tr>
+    <td>2</td>
+    <td>006</td>
+    <td>2021-07-29 18:00:00</td>
+    <td>1000</td>
+    <td>0</td>
+    <td>800</td>
+    <td>2</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+
+    <td>22222222</td>
+    <td>00364</td>
+    <td>1600</td>
+    <td>2021-01-12 16:62:08</td>
+    </tr>
+    <tr>
+    <td>3</td>
+    <td>003</td>
+    <td>2021-08-15 17:00:00</td>
+    <td>700</td>
+    <td>4</td>
+    <td>450</td>
+    <td>3</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>33333333</td>
+    <td>00015</td>
+    <td>4150</td>
+    <td>2021-01-13 10:08:45</td>
+    </tr>
+    </tbody>
+    </table>
+    h2 вопрос 2
+    p насколько я знаю, значением ячейки в бд, может быть массив
+    <table>
+    <thead>
+    <tr>
+    <th>id</th>
+    <th>event_id</th>
+    <th>event_date</th>
+    <th>ticket_adult_price</th>
+    <th>ticket_adult_quantity</th>
+    <th>ticket_kid_price</th>
+    <th>ticket_kid_quantity</th>
+    <th>barcode(des)</th>
+    <th>user_id</th>
+    <th>equal_price</th>
+    <th>created</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td>1</td>
+    <td>003</td>
+    <td>2021-08-21 13:00:00</td>
+    <td>700</td>
+    <td>1</td>
+    <td>450</td>
+    <td>3</td>
+    <td>11111111,22222222,33333333,44444444</td>
+    <td>00451</td>
+    <td>2050</td>
+    <td>2021-01-11 13:22:09</td>
+    </tr>
+    
+    </tbody>
+    </table>

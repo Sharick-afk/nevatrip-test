@@ -1,0 +1,13 @@
+.test3 {
+  table {
+    border: 1px solid black;
+  }
+  tr {
+    &:nth-child(even) {
+      background-color: #f1f1f1;
+    }
+  }
+  td {
+    border: 1px solid black;
+  }
+}

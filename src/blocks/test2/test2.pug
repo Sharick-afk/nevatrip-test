@@ -1,0 +1,25 @@
+mixin test2(modifier)
+  section.test2
+    .container 
+      .test2__block
+        <select name="direction" id="direction">
+          <option value="1">из A в B</option>
+          <option value="2">из B в A</option>
+          <option value="3">из A в B и обратно в А</option>
+        </select>
+      .test2__block
+        <label for="time">Выберите время</label>
+        <select name="time" id="time" >
+        </select>
+      .test2__block.js-dop-block.hide
+        <label for="time2">Выберите время возвращения</label>
+        p.error К данному времени вы не успеете 
+        <select name="time2" id="time2" >
+        </select>
+      .test2__block
+        <label for="num">Количество билетов</label>
+        <input id="number" type='number'>
+        <button id='result-btn'>Посчитать</button>
+      p.js-result
+    a.change-btn(href="test3.html") третье задание
+      

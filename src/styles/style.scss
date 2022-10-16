@@ -51,5 +51,24 @@ ul {
 img {
   max-width: 100%;
 }
-
+.change-btn {
+  position: fixed;
+  right: 50px;
+  top: 50px;
+  display: flex;
+  width: 200px;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  background-color: $yellow;
+  color: $b;
+  text-decoration: none;
+  @media (max-width: 998px) {
+    display: none;
+  }
+}
 @import "./src/blocks/banners/banners";
+@import "./src/blocks/test2/test2";
+
+@import './src/blocks/test3/test3';
